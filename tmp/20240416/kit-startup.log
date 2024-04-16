@@ -1,0 +1,268 @@
+(base) darien@universe:~/omniverse/kit-app-template/_build/linux-x86_64/release$ ./kit/kit ./apps/my_company.my_app.kit \
+   --enable omni.services.streaming.manager \
+   --enable omni.kit.livestream.native \
+   --no-window \
+   --allow-root \
+   --/app/livestream/logLevel=debug
+Loading user config located at: '/home/darien/.local/share/ov/data/Kit/my_company.my_app/2023.0/user.config.json'
+[Info] [carb] Logging to file: /home/darien/.nvidia-omniverse/logs/Kit/my_company.my_app/2023.0/kit_20240416_092742.log
+[0.085s] [ext: omni.kit.async_engine-0.0.0] startup
+[0.122s] [ext: omni.assets.plugins-0.0.0] startup
+[0.123s] [ext: omni.stats-0.0.0] startup
+[0.124s] [ext: omni.client-1.0.1] startup
+[0.129s] [ext: omni.gpu_foundation-0.0.0] startup
+[0.136s] [ext: omni.rtx.shadercache.vulkan-1.0.0] startup
+[0.137s] [ext: carb.windowing.plugins-1.0.0] startup
+[0.143s] [ext: omni.kit.renderer.init-0.0.0] startup
+2024-04-16 01:27:43 [223ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) Graphics (ADL GT2)
+2024-04-16 01:27:43 [223ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) Graphics (ADL GT2)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 525.147.05    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 3080 Ti Lap.. | Yes: 0 |     | 16384   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2420      | 995e574d.. |
+|     |                                  |        |     |            | 1         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | Intel(R) Graphics (ADL GT2)      |        |     | 48016   MB | 8086      | 0          |
+|     |                                  |        |     |            | 46a6      | 3fc767c9.. |
+|     |                                  |        |     |            | 0         |            |
+|=============================================================================================|
+| OS: 22.04.3 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.3, Kernel: 6.5.0-27-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101004 (1.21.1.4)
+| Processor: 12th Gen Intel(R) Core(TM) i9-12900HK | Cores: 14 | Logical: 28
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 64022 | Free Memory: 56726
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 2047
+|---------------------------------------------------------------------------------------------|
+[0.604s] [ext: omni.kit.pipapi-0.0.0] startup
+[0.605s] [ext: omni.kit.pip_archive-0.0.0] startup
+[0.605s] [ext: omni.mtlx-0.1.0] startup
+[0.606s] [ext: omni.usd.config-1.0.3] startup
+[0.607s] [ext: omni.gpucompute.plugins-0.0.0] startup
+[0.608s] [ext: omni.usd.libs-1.0.0] startup
+[0.685s] [ext: omni.kit.loop-default-0.2.0] startup
+[0.685s] [ext: omni.appwindow-1.1.5] startup
+[0.686s] [ext: omni.kit.renderer.core-0.0.0] startup
+[0.692s] [ext: omni.kit.renderer.capture-0.0.0] startup
+[0.694s] [ext: omni.kit.renderer.imgui-0.0.0] startup
+[0.740s] [ext: carb.audio-0.1.0] startup
+[0.742s] [ext: omni.ui-2.18.5] startup
+[0.750s] [ext: omni.uiaudio-1.0.0] startup
+[0.752s] [ext: omni.kit.mainwindow-1.0.1] startup
+[0.753s] [ext: omni.kit.uiapp-0.0.0] startup
+[0.753s] [ext: omni.usd.schema.audio-0.0.0] startup
+[0.857s] [ext: omni.usd.schema.omnigraph-1.0.0] startup
+[0.862s] [ext: omni.usd.schema.omniscripting-1.0.0] startup
+[0.866s] [ext: omni.usd.schema.physics-0.0.0] startup
+[0.882s] [ext: omni.usd.schema.semantics-0.0.0] startup
+[0.889s] [ext: omni.usd.schema.geospatial-0.0.0] startup
+[0.891s] [ext: omni.usd.schema.anim-0.0.0] startup
+[0.906s] [ext: omni.kit.actions.core-1.0.0] startup
+[0.908s] [ext: omni.timeline-1.0.9] startup
+[0.909s] [ext: omni.activity.core-1.0.1] startup
+[0.911s] [ext: omni.kit.commands-1.4.6] startup
+[0.915s] [ext: omni.usd_resolver-1.0.1] startup
+[0.920s] [ext: omni.kit.audiodeviceenum-1.0.1] startup
+[0.921s] [ext: omni.usd.core-1.1.8] startup
+[0.924s] [ext: omni.graph.exec-0.3.0] startup
+[0.924s] [ext: omni.kit.window.popup_dialog-2.0.23] startup
+[0.927s] [ext: omni.resourcemonitor-105.0.0] startup
+[0.929s] [ext: omni.kit.exec.core-0.5.0] startup
+[0.930s] [ext: omni.kit.widget.nucleus_connector-1.1.4] startup
+[0.932s] [ext: omni.hydra.usdrt_delegate-7.2.37] startup
+[0.941s] [ext: omni.hydra.scene_delegate-0.3.2] startup
+[0.946s] [ext: omni.usd-1.10.21] startup
+[0.990s] [ext: omni.kit.usd.layers-2.1.27] startup
+[0.997s] [ext: omni.kit.menu.utils-1.5.7] startup
+[1.003s] [ext: omni.kit.widget.prompt-1.0.6] startup
+[1.004s] [ext: omni.kit.collaboration.presence_layer-1.0.8] startup
+[1.006s] [ext: omni.kit.primitive.mesh-1.0.15] startup
+[1.008s] [ext: omni.kit.helper.file_utils-0.1.6] startup
+[1.024s] [ext: omni.kit.widget.nucleus_info-1.0.2] startup
+[1.025s] [ext: omni.kit.widget.path_field-2.0.8] startup
+[1.025s] [ext: omni.kit.widget.filebrowser-2.3.35] startup
+[1.028s] [ext: omni.kit.search_core-1.0.5] startup
+[1.029s] [ext: omni.kit.notification_manager-1.0.6] startup
+[1.030s] [ext: omni.kit.widget.browser_bar-2.0.9] startup
+[1.030s] [ext: omni.kit.widget.search_delegate-1.0.4] startup
+[1.031s] [ext: omni.kit.widget.versioning-1.4.6] startup
+[1.032s] [ext: omni.ui.scene-1.7.0] startup
+[1.036s] [ext: omni.kit.clipboard-1.0.3] startup
+[1.037s] [ext: omni.kit.menu.create-1.0.11] startup
+[1.038s] [ext: omni.kit.widget.searchable_combobox-1.0.5] startup
+[1.039s] [ext: omni.kit.window.filepicker-2.10.14] startup
+[1.045s] [ext: omni.kit.context_menu-1.6.8] startup
+[1.047s] [ext: omni.kit.widget.options_menu-1.0.5] startup
+[1.047s] [ext: omni.kit.widget.settings-1.0.6] startup
+[1.049s] [ext: omni.kit.window.file_importer-1.0.23] startup
+[1.050s] [ext: omni.kit.window.file_exporter-1.0.23] startup
+[1.051s] [ext: omni.kit.widget.filter-1.1.2] startup
+[1.052s] [ext: omni.kit.hotkeys.core-1.3.0] startup
+[1.055s] [ext: omni.kit.window.preferences-1.3.23] startup
+[1.057s] [ext: omni.kit.widget.stage-2.9.6] startup
+[1.064s] [ext: omni.kit.widget.live_session_management-1.2.22] startup
+[1.066s] [ext: omni.iray.libs-0.0.0] startup
+[1.070s] [ext: omni.kit.stage_templates-1.1.20] startup
+[1.071s] [ext: omni.kit.window.drop_support-1.0.1] startup
+[1.071s] [ext: omni.kit.window.file-1.3.45] startup
+[1.073s] [ext: omni.kit.window.content_browser_registry-0.0.1] startup
+[1.073s] [ext: omni.kit.widget.searchfield-1.1.3] startup
+[1.074s] [ext: omni.kit.widget.highlight_label-1.0.1] startup
+[1.075s] [ext: omni.kit.window.content_browser-2.7.17] startup
+2024-04-16 01:27:43 [1,060ms] [Warning] [omni.kit.menu.utils.scripts.builder_utils] ********************* MenuItemDescription Content *********************
+2024-04-16 01:27:43 [1,060ms] [Warning] [omni.kit.menu.utils.scripts.builder_utils] Menu item "Content" from omni.kit.window.content_browser.extension uses onclick_fn
+[1.088s] [ext: omni.kit.window.property-1.9.6] startup
+[1.090s] [ext: omni.kit.widget.layers-1.6.32] startup
+[1.097s] [ext: omni.volume-0.4.0] startup
+[1.099s] [ext: omni.mdl.neuraylib-0.2.0] startup
+[1.100s] [ext: omni.kit.property.usd-3.21.16] startup
+[1.106s] [ext: omni.kit.property.layer-1.1.5] startup
+[1.107s] [ext: omni.hydra.rtx-0.1.0] startup
+[1.116s] [ext: omni.hydra.engine.stats-1.0.1] startup
+[1.119s] [ext: omni.kit.property.camera-1.0.5] startup
+[1.120s] [ext: omni.kit.property.audio-1.0.9] startup
+[1.123s] [ext: omni.kit.hydra_texture-1.1.12] startup
+[1.127s] [ext: omni.kit.viewport.legacy_gizmos-1.0.14] startup
+[1.130s] [ext: omni.kit.widget.viewport-105.1.10] startup
+[1.133s] [ext: omni.mdl-0.2.1] startup
+[1.146s] [ext: omni.services.facilities.base-1.0.4] startup
+[1.147s] [ext: omni.kit.viewport.registry-104.0.5] startup
+[1.147s] [ext: omni.kit.raycast.query-1.0.2] startup
+[1.154s] [ext: omni.kit.material.library-1.3.41] startup
+[1.158s] [ext: omni.services.core-1.7.0] startup
+[1.209s] [ext: omni.kit.viewport.window-105.1.13] startup
+[1.219s] [ext: omni.kit.property.material-1.8.36] startup
+[1.221s] [ext: omni.kit.manipulator.transform-104.6.15] startup
+[1.222s] [ext: omni.kit.viewport.utility-1.0.16] startup
+[1.222s] [ext: omni.kit.widget.toolbar-1.5.6] startup
+[1.229s] [ext: omni.kit.property.render-1.1.1] startup
+[1.232s] [ext: omni.kit.manipulator.selector-1.0.1] startup
+[1.233s] [ext: omni.kit.usd_undo-0.1.2] startup
+[1.233s] [ext: omni.kit.manipulator.tool.snap-1.4.2] startup
+[1.287s] [ext: omni.kit.manipulator.viewport-104.0.9] startup
+[1.288s] [ext: omni.kit.widget.spinner-1.0.6] startup
+[1.289s] [ext: omni.kit.property.skel-1.0.4] startup
+[1.295s] [ext: omni.kit.manipulator.camera-105.0.4] startup
+[1.298s] [ext: omni.kit.manipulator.prim-105.0.11] startup
+[1.310s] [ext: omni.kit.viewport.menubar.core-105.0.19] startup
+[1.340s] [ext: omni.kit.manipulator.selection-104.0.8] startup
+[1.341s] [ext: omni.kit.viewport.actions-105.1.6] startup
+[1.345s] [ext: omni.hydra.scene_api-0.1.2] startup
+[1.351s] [ext: omni.kit.viewport.menubar.render-105.1.1] startup
+[1.353s] [ext: omni.kit.viewport.menubar.camera-105.1.9] startup
+[1.357s] [ext: omni.kit.viewport.menubar.settings-105.0.9] startup
+[1.359s] [ext: omni.kit.viewport.menubar.display-105.1.0] startup
+[1.360s] [ext: omni.kit.property.transform-1.3.10] startup
+[1.362s] [ext: omni.kit.property.light-1.0.8] startup
+[1.363s] [ext: omni.kit.property.geometry-1.2.11] startup
+[1.365s] [ext: omni.kit.viewport.bundle-104.0.1] startup
+[1.365s] [ext: omni.kit.property.bundle-1.2.9] startup
+[1.365s] [ext: my_company.my_app.resources-0.1.0] startup
+[my_company.my_app.resources] HelloPythonExtension startup
+[1.366s] [ext: omni.services.transport.server.base-1.1.1] startup
+[1.366s] [ext: omni.kit.streamsdk.plugins-2.6.2] startup
+[1.366s] [ext: omni.kit.quicklayout-1.0.5] startup
+[1.367s] [ext: omni.rtx.window.settings-0.6.9] startup
+[1.369s] [ext: omni.services.transport.server.http-1.3.0] startup
+[1.380s] [ext: omni.kit.renderer.cuda_interop-1.0.1] startup
+[1.381s] [ext: omni.kit.widget.stage_icons-1.0.4] startup
+[1.382s] [ext: omni.kit.window.title-1.1.3] startup
+[1.382s] [ext: omni.services.streaming.manager-0.3.10] startup
+[1.385s] [ext: omni.kit.livestream.core-2.4.0] startup
+[1.389s] [ext: omni.kit.window.stage-2.4.4] startup
+2024-04-16 01:27:44 [1,373ms] [Warning] [omni.kit.menu.utils.scripts.builder_utils] ********************* MenuItemDescription Stage *********************
+2024-04-16 01:27:44 [1,373ms] [Warning] [omni.kit.menu.utils.scripts.builder_utils] Menu item "Stage" from omni.kit.window.stage.stage_extension uses onclick_fn
+[1.391s] [ext: omni.app.setup-1.0.8] startup
+[1.393s] [ext: omni.kit.livestream.native-2.4.0] startup
+
+Active user not found. Using default user [kiosk]2024-04-16 01:27:44 [1,386ms] [Fatal] [carb.livestream.plugin] StreamSDK: VersionDump: #5(M)[2024-04-16 01:27:44,324]=09:27:44=*00000*{14613278620632498406}&1768021A&<VersionDump>      Name: streamsdk-server
+2024-04-16 01:27:44 [1,386ms] [Fatal] [carb.livestream.plugin] StreamSDK: VersionDump: #6(M)[2024-04-16 01:27:44,324]=09:27:44=*00000*{14613278620632498406}&CF6CAAC5&<VersionDump>      DVS Branch: gcomp/rel/gs_04_63
+2024-04-16 01:27:44 [1,386ms] [Fatal] [carb.livestream.plugin] StreamSDK: VersionDump: #7(M)[2024-04-16 01:27:44,324]=09:27:44=*00000*{14613278620632498406}&EA649458&<VersionDump>      DVS P4VirtualChangelist: 33834416
+2024-04-16 01:27:44 [1,386ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #0(M)[2024-04-16 01:27:44,324]=09:27:44=*00000*{14613278620632498406}&7DF5E4E1&<Server>           Using: OpenSSL 3.0.8 7 Feb 2023
+2024-04-16 01:27:44 [1,386ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #1(M)[2024-04-16 01:27:44,325]=09:27:44=*00000*{14613278620632498406}&55B93E2E&<Server>           RND is initialized
+2024-04-16 01:27:44 [1,387ms] [Error] [carb.livestream.plugin] StreamSDK: NvNetworkCommon: #7(E)[2024-04-16 01:27:44,325]=09:27:44=*00000*{14613278620632498406}&168334B0&<NvNetworkCommon>  Network Address To String: invalid parameters 0x7ffc85d98d20, 0x7ffc85d98d40, 48
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #8(M)[2024-04-16 01:27:44,325]=09:27:44=*00000*{14613278620632498406}&AD28CD28&<Server>           --- 2C:F0:5D:FF:97:BC: 172.25.88.170 / invalid
+2024-04-16 01:27:44 [1,387ms] [Error] [carb.livestream.plugin] StreamSDK: NvNetworkCommon: #3(E)[2024-04-16 01:27:44,325]=09:27:44=*00000*{14613278620632498406}&168334B0&<NvNetworkCommon>  Network Address To String: invalid parameters 0x7ffc85d98d20, 0x7ffc85d98d40, 48
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #4(M)[2024-04-16 01:27:44,325]=09:27:44=*00000*{14613278620632498406}&AD28CD28&<Server>           --- 52:54:00:67:E6:D8: 192.168.122.1 / invalid
+2024-04-16 01:27:44 [1,387ms] [Error] [carb.livestream.plugin] StreamSDK: NvNetworkCommon: #9(E)[2024-04-16 01:27:44,325]=09:27:44=*00000*{14613278620632498406}&168334B0&<NvNetworkCommon>  Network Address To String: invalid parameters 0x7ffc85d98d20, 0x7ffc85d98d40, 48
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #0(M)[2024-04-16 01:27:44,325]=09:27:44=*00000*{14613278620632498406}&AD28CD28&<Server>           --- 02:42:D9:76:46:6F: 172.22.0.1 / invalid
+2024-04-16 01:27:44 [1,387ms] [Error] [carb.livestream.plugin] StreamSDK: NvNetworkCommon: #5(E)[2024-04-16 01:27:44,325]=09:27:44=*00000*{14613278620632498406}&168334B0&<NvNetworkCommon>  Network Address To String: invalid parameters 0x7ffc85d98d20, 0x7ffc85d98d40, 48
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #6(M)[2024-04-16 01:27:44,325]=09:27:44=*00000*{14613278620632498406}&AD28CD28&<Server>           --- 02:42:16:48:1D:D7: 172.17.0.1 / invalid
+2024-04-16 01:27:44 [1,387ms] [Error] [carb.livestream.plugin] StreamSDK: NvNetworkCommon: #1(E)[2024-04-16 01:27:44,325]=09:27:44=*00000*{14613278620632498406}&168334B0&<NvNetworkCommon>  Network Address To String: invalid parameters 0x7ffc85d98d20, 0x7ffc85d98d40, 48
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #2(M)[2024-04-16 01:27:44,325]=09:27:44=*00000*{14613278620632498406}&AD28CD28&<Server>           --- 02:42:59:03:C8:A4: 172.19.0.1 / invalid
+2024-04-16 01:27:44 [1,387ms] [Error] [carb.livestream.plugin] StreamSDK: NvNetworkCommon: #7(E)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&168334B0&<NvNetworkCommon>  Network Address To String: invalid parameters 0x7ffc85d98d20, 0x7ffc85d98d40, 48
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #8(M)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&AD28CD28&<Server>           --- 02:42:8B:68:08:C0: 172.18.0.1 / invalid
+2024-04-16 01:27:44 [1,387ms] [Error] [carb.livestream.plugin] StreamSDK: NvNetworkCommon: #3(E)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&168334B0&<NvNetworkCommon>  Network Address To String: invalid parameters 0x7ffc85d98d20, 0x7ffc85d98d40, 48
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #4(M)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&AD28CD28&<Server>           --- 02:42:FB:F6:44:7F: 192.168.16.1 / invalid
+2024-04-16 01:27:44 [1,387ms] [Error] [carb.livestream.plugin] StreamSDK: NvNetworkCommon: #9(E)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&168334B0&<NvNetworkCommon>  Network Address To String: invalid parameters 0x7ffc85d98d20, 0x7ffc85d98d40, 48
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #0(M)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&AD28CD28&<Server>           --- 02:42:42:3B:89:22: 172.21.0.1 / invalid
+2024-04-16 01:27:44 [1,387ms] [Error] [carb.livestream.plugin] StreamSDK: NvNetworkCommon: #5(E)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&168334B0&<NvNetworkCommon>  Network Address To String: invalid parameters 0x7ffc85d98d20, 0x7ffc85d98d40, 48
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #6(M)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&AD28CD28&<Server>           --- 02:42:91:AD:1E:A7: 172.24.0.1 / invalid
+2024-04-16 01:27:44 [1,387ms] [Error] [carb.livestream.plugin] StreamSDK: NvNetworkCommon: #1(E)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&168334B0&<NvNetworkCommon>  Network Address To String: invalid parameters 0x7ffc85d98d20, 0x7ffc85d98d40, 48
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #2(M)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&AD28CD28&<Server>           --- 2C:F0:5D:FF:97:BC: 172.25.88.170 / invalid
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: NvEncUtil: #4(M)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&CC7C5461&<NvEncUtil>        Computing SPS/PPS headers.
+2024-04-16 01:27:44 [1,387ms] [Warning] [carb.livestream.plugin] StreamSDK: VideoFrameCtxt: #5(W)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&0564BB28&<VideoFrameCtxt>   Couldn't find VideoFrameContext for this thread.
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: AdapterContext: #7(M)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&1E959A86&<AdapterContext>   Initializing Adapter context
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: AdapterContext: #8(M)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&F0E847F4&<AdapterContext>   Initialized context for adapter 0: 1280 x 720 @ 60.0 Hz
+2024-04-16 01:27:44 [1,387ms] [Fatal] [carb.livestream.plugin] StreamSDK: AdapterContext: #0(M)[2024-04-16 01:27:44,326]=09:27:44=*00000*{14613278620632498406}&9A64D99C&<AdapterContext>   System is NOT co-proc.
+2024-04-16 01:27:44 [1,416ms] [Fatal] [carb.livestream.plugin] StreamSDK: AdapterContext: #1(M)[2024-04-16 01:27:44,355]=09:27:44=*00028*{14613278620632498406}&21C9B327&<AdapterContext>   GPU memory usage: used = 597.625000, free = 15519.062500 MB, total = 16116.687500 MB
+2024-04-16 01:27:44 [1,416ms] [Fatal] [carb.livestream.plugin] StreamSDK: AdapterContext: #2(M)[2024-04-16 01:27:44,355]=09:27:44=*00000*{14613278620632498406}&DD40CDEB&<AdapterContext>   Initialized CUDA for device 'NVIDIA GeForce RTX 3080 Ti Laptop GPU' (SM 8.6) in compute mode 'CU_COMPUTEMODE_DEFAULT'.
+2024-04-16 01:27:44 [1,416ms] [Fatal] [carb.livestream.plugin] StreamSDK: VideoEncoder: #5(M)[2024-04-16 01:27:44,355]=09:27:44=*00000*{14613278620632498406}&8BAD092A&<VideoEncoder>     Initializing NvEnc12VideoEncoder.
+2024-04-16 01:27:44 [1,416ms] [Fatal] [carb.livestream.plugin] StreamSDK: NvEnc12VideoEncoder: #6(M)[2024-04-16 01:27:44,355]=09:27:44=*00000*{14613278620632498406}&2A6D6983&<NvEnc12VideoEnco> Using NvEnc header version 12.0.
+2024-04-16 01:27:44 [1,431ms] [Warning] [carb.livestream.plugin] StreamSDK: CodecStatics: #9(W)[2024-04-16 01:27:44,370]=09:27:44=*00000*{14613278620632498406}&5B6228A6&<CodecStatics>     Failed to read the Av1Disable regkey (CONFIG_STATUS result = 1); using default value of 0.
+2024-04-16 01:27:44 [1,431ms] [Warning] [carb.livestream.plugin] StreamSDK: NvEncUtil: #0(W)[2024-04-16 01:27:44,370]=09:27:44=*00000*{14613278620632498406}&11A7B69A&<NvEncUtil>        Skipping unsupported/disallowed format.
+2024-04-16 01:27:44 [1,432ms] [Warning] [carb.livestream.plugin] StreamSDK: NvEncUtil: #2(W)[2024-04-16 01:27:44,370]=09:27:44=*00000*{14613278620632498406}&11A7B69A&<NvEncUtil>        Skipping unsupported/disallowed format.
+2024-04-16 01:27:44 [1,433ms] [Warning] [carb.livestream.plugin] StreamSDK: NvEncUtil: #4(W)[2024-04-16 01:27:44,371]=09:27:44=*00000*{14613278620632498406}&11A7B69A&<NvEncUtil>        Skipping unsupported/disallowed format.
+2024-04-16 01:27:44 [1,434ms] [Warning] [carb.livestream.plugin] StreamSDK: NvEncUtil: #6(W)[2024-04-16 01:27:44,372]=09:27:44=*00000*{14613278620632498406}&11A7B69A&<NvEncUtil>        Skipping unsupported/disallowed format.
+2024-04-16 01:27:44 [1,434ms] [Warning] [carb.livestream.plugin] StreamSDK: NvEncUtil: #8(W)[2024-04-16 01:27:44,373]=09:27:44=*00000*{14613278620632498406}&11A7B69A&<NvEncUtil>        Skipping unsupported/disallowed format.
+2024-04-16 01:27:44 [1,435ms] [Warning] [carb.livestream.plugin] StreamSDK: NvEncUtil: #0(W)[2024-04-16 01:27:44,374]=09:27:44=*00000*{14613278620632498406}&11A7B69A&<NvEncUtil>        Skipping unsupported/disallowed format.
+2024-04-16 01:27:44 [1,435ms] [Fatal] [carb.livestream.plugin] StreamSDK: AdapterContext: #1(M)[2024-04-16 01:27:44,374]=09:27:44=*00000*{14613278620632498406}&21C9B327&<AdapterContext>   GPU memory usage: used = 597.625000, free = 15519.062500 MB, total = 16116.687500 MB
+2024-04-16 01:27:44 [1,452ms] [Warning] [carb.livestream.plugin] StreamSDK: VideoEncoder: #5(W)[2024-04-16 01:27:44,391]=09:27:44=*00000*{14613278620632498406}&FB11B4FE&<VideoEncoder>     VideoEncoder was not deinitialized prior to destruction!
+2024-04-16 01:27:44 [1,452ms] [Fatal] [carb.livestream.plugin] StreamSDK: NvEncUtil: #6(M)[2024-04-16 01:27:44,391]=09:27:44=*00000*{14613278620632498406}&B4368309&<NvEncUtil>        Finished computing SPS/PPS headers.
+2024-04-16 01:27:44 [1,453ms] [Fatal] [carb.livestream.plugin] StreamSDK: Signaling: #0(M)[2024-04-16 01:27:44,392]=09:27:44=*00000*{17446744475963577204}&1165739F&<Signaling>        Signaling server started.
+Streaming server started.
+2024-04-16 01:27:44 [1,455ms] [Warning] [omni.kit.menu.utils.scripts.builder_utils] ********************* MenuItemDescription View Online Documentation *********************
+2024-04-16 01:27:44 [1,455ms] [Warning] [omni.kit.menu.utils.scripts.builder_utils] Menu item "View Online Documentation" from omni.services.streaming.manager.stream_menu uses onclick_fn
+2024-04-16 01:27:44 [1,455ms] [Warning] [omni.kit.menu.utils.scripts.builder_utils] ********************* MenuItemDescription View Online Documentation *********************
+2024-04-16 01:27:44 [1,455ms] [Warning] [omni.kit.menu.utils.scripts.builder_utils] Menu item "View Online Documentation" from omni.services.streaming.manager.stream_menu uses onclick_fn
+2024-04-16 01:27:44 [1,456ms] [Warning] [omni.kit.menu.utils.scripts.builder_utils] ********************* MenuItemDescription 127.0.1.1 *********************
+2024-04-16 01:27:44 [1,456ms] [Warning] [omni.kit.menu.utils.scripts.builder_utils] Menu item "127.0.1.1" from omni.services.streaming.manager.stream_menu uses onclick_fn
+2024-04-16 01:27:44 [1,456ms] [Warning] [omni.kit.menu.utils.scripts.builder_utils] ********************* MenuItemDescription View Online Documentation *********************
+2024-04-16 01:27:44 [1,456ms] [Warning] [omni.kit.menu.utils.scripts.builder_utils] Menu item "View Online Documentation" from omni.services.streaming.manager.stream_menu uses onclick_fn
+[1.472s] [ext: omni.kit.window.toolbar-1.5.4] startup
+[1.474s] [ext: my_company.my_app-2023.0.0] startup
+[1.474s] [ext: heavyai.ui.component-1.0.0] startup
+2024-04-16 01:27:45 [2,600ms] [Warning] [omni.kit.hotkeys.core.registry] [Hotkey] duplicated action as SPACE (On Press) with omni.kit.widget.toolbar.omni.kit.widget.toolbar::toolbar::play!
+2024-04-16 01:27:45 [2,600ms] [Warning] [omni.kit.hotkeys.core.registry] [Hotkey] Cannot register Global [omni.kit.widget.toolbar] omni.kit.widget.toolbar::toolbar::play.SPACE, error code: Duplicated action definition
+[2.665s] app ready
+[3.558s] [ext: omni.kit.viewport.rtx-104.0.0] startup
+[3.561s] [ext: omni.rtx.settings.core-0.5.13] startup
+2024-04-16 01:28:15 [32,075ms] [Error] [carb.livestream.plugin] StreamSDK: natt: #8(E)[2024-04-16 01:28:15,014]=09:28:15=*00000*{7284006749977746769}&9620D6EB&<natt>             NATT Initialize: invalid STUN server count 0
+2024-04-16 01:28:15 [32,076ms] [Error] [carb.livestream.plugin] StreamSDK: natt: #0(E)[2024-04-16 01:28:15,014]=09:28:15=*00000*{7284006749977746769}&A7EC0954&<natt>             NATT GetSocket Endpoint: NATT is not initialized
+2024-04-16 01:28:15 [32,076ms] [Warning] [carb.livestream.plugin] StreamSDK: NattHolePunch: #2(W)[2024-04-16 01:28:15,014]=09:28:15=*00000*{7284006749977746769}&FABB1E29&<NattHolePunch>    Address: 1.2.3.5 is not valid
+2024-04-16 01:28:15 [32,078ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #4(M)[2024-04-16 01:28:15,016]=09:28:15=*00000*{7284006749977746769}&70BFD087&<Server>           Server is now configuring.
+2024-04-16 01:28:15 [32,084ms] [Warning] [carb.livestream.plugin] StreamSDK: RtspHandshake: #9(W)[2024-04-16 01:28:15,023]=09:28:15=*00000*{7284006749977746769}&C811A96F&<RtspHandshake>    Redundant setup request for streamid=audio/0/0
+main: thread_init: already added for thread
+main: thread_init: already added for thread
+main: thread_init: already added for thread
+2024-04-16 01:28:15 [32,103ms] [Error] [carb.livestream.plugin] StreamSDK: NvNetworkCommon: #1(E)[2024-04-16 01:28:15,041]=09:28:15=*00000*{7284006749977746769}&456545CF&<NvNetworkCommon>  Socket Bind: failed to bind socket 201 to 0.0.0.0:47999 (Error: 98)
+2024-04-16 01:28:15 [32,103ms] [Error] [carb.livestream.plugin] StreamSDK: NvscStreamingSession: #2(E)[2024-04-16 01:28:15,041]=09:28:15=*00000*{7284006749977746769}&321F15FB&<NvscStreamingSes> Failed to create RTP transport for control stream
+2024-04-16 01:28:15 [32,103ms] [Error] [carb.livestream.plugin] StreamSDK: RtspHandshake: #3(E)[2024-04-16 01:28:15,042]=09:28:15=*00000*{7284006749977746769}&8B798862&<RtspHandshake>    Failed to set up stream streamid=control/13/0. Error 0x8000000B
+2024-04-16 01:28:15 [32,104ms] [Error] [carb.livestream.plugin] StreamSDK: NativeServer: #4(E)[2024-04-16 01:28:15,042]=09:28:15=*00000*{7284006749977746769}&142B919E&<NativeServer>     onSessionHandshakeDone failed: StreamSdkException 800b1000 [NVST_R_INVALID_STATE] Cannot run the requested logic for state (1001) is incorrect.
+2024-04-16 01:28:26 [43,453ms] [Error] [carb.livestream.plugin] StreamSDK: natt: #7(E)[2024-04-16 01:28:26,391]=09:28:26=*00000*{7284006749977746769}&9620D6EB&<natt>             NATT Initialize: invalid STUN server count 0
+2024-04-16 01:28:26 [43,453ms] [Error] [carb.livestream.plugin] StreamSDK: natt: #9(E)[2024-04-16 01:28:26,391]=09:28:26=*00000*{7284006749977746769}&A7EC0954&<natt>             NATT GetSocket Endpoint: NATT is not initialized
+2024-04-16 01:28:26 [43,453ms] [Warning] [carb.livestream.plugin] StreamSDK: NattHolePunch: #1(W)[2024-04-16 01:28:26,391]=09:28:26=*00000*{7284006749977746769}&FABB1E29&<NattHolePunch>    Address: 1.2.3.5 is not valid
+2024-04-16 01:28:26 [43,455ms] [Fatal] [carb.livestream.plugin] StreamSDK: Server: #3(M)[2024-04-16 01:28:26,393]=09:28:26=*00000*{7284006749977746769}&70BFD087&<Server>           Server is now configuring.
+2024-04-16 01:28:26 [43,461ms] [Warning] [carb.livestream.plugin] StreamSDK: RtspHandshake: #8(W)[2024-04-16 01:28:26,399]=09:28:26=*00000*{7284006749977746769}&C811A96F&<RtspHandshake>    Redundant setup request for streamid=audio/0/0
+main: thread_init: already added for thread
+main: thread_init: already added for thread
+main: thread_init: already added for thread
+2024-04-16 01:28:26 [43,475ms] [Error] [carb.livestream.plugin] StreamSDK: NvNetworkCommon: #0(E)[2024-04-16 01:28:26,414]=09:28:26=*00000*{7284006749977746769}&456545CF&<NvNetworkCommon>  Socket Bind: failed to bind socket 201 to 0.0.0.0:47999 (Error: 98)
+2024-04-16 01:28:26 [43,475ms] [Error] [carb.livestream.plugin] StreamSDK: NvscStreamingSession: #1(E)[2024-04-16 01:28:26,414]=09:28:26=*00000*{7284006749977746769}&321F15FB&<NvscStreamingSes> Failed to create RTP transport for control stream
+2024-04-16 01:28:26 [43,475ms] [Error] [carb.livestream.plugin] StreamSDK: RtspHandshake: #2(E)[2024-04-16 01:28:26,414]=09:28:26=*00000*{7284006749977746769}&8B798862&<RtspHandshake>    Failed to set up stream streamid=control/13/0. Error 0x8000000B
+2024-04-16 01:28:26 [43,476ms] [Error] [carb.livestream.plugin] StreamSDK: NativeServer: #0(E)[2024-04-16 01:28:26,414]=09:28:26=*00000*{7284006749977746769}&142B919E&<NativeServer>     onSessionHandshakeDone failed: StreamSdkException 800b1000 [NVST_R_INVALID_STATE] Cannot run the requested logic for state (1001) is incorrect.
